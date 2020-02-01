@@ -46,6 +46,19 @@ You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Produc
 
 What is new / different about Kafka Streams? Write two paragraphs.
 
+It is an API, a system for transforming and enriching the streams of data used in Apache Kafka. It is useful when you are looking for high level of abstraction. This API is part of the open source Apache Kafka project. Several important characteristics that makes Kafka Streams different:
+
+- Support one record at a time processing for miliseconds latenncy
+- Support stateless processing, stateful processing and windowing operations
+- Elastically scalable and Fault Tolerant
+- Deployment agnostic (on-premise, cloud, containers, virtual machines, etc.)
+- No matter if it is a small, medium or large scale use case
+- Develop on Linux, Windows, Mac
+
+From the architecture point of view, Kafka Streams code will run into your application without a separate processing cluster (seen i.e. as a Java dependency), making the deplyment much easier. Also, all the communication between Kakfa Streams and other applications are performed by Kafka, so you still have all the advatages of this tool, i.e. security features. 
+
+Now in applications of streaming data processing Kafka Streams guarantees that for any record read from the source Kafka topics, its processing results will be reflected exactly once in the output Kafka topic as well as in the state stores for stateful operations, and this is achieved because the integration between Kafka Streams and Kafka storage system.
+
 ## 3. Watch the AlphaGo Movie on Netflix
 
 Done!
