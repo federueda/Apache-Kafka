@@ -32,6 +32,10 @@ pip install kafka-python
 
 
 
+### Screenshots of Producer+Consumer
+
+
+
 ## 2. Read the entire Documentation of Apache Kafka.
 
 What is new / different about Kafka Streams? Write to paragraphs.
