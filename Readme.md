@@ -41,10 +41,10 @@ pip install kafka-python
 
 I implemented a very basic code for producers, with a time function that held the execution of sending the messages by 1 and 2 seconds, and encapsulating the information needed to print only in the key. The consumer just read the message.key with the origin and value of the number (odd or even).
 
-First, the consumer code is executed and it starts to listen, then is executed the Producer_A and Producer_B python codes. In the following screenshot you can see the consumer code executed, showing the keys from every message sent.
+First, the consumer code is executed and it starts to listen, then is executed the Producer_A and Producer_B python codes. In the following screenshot you can see the consumer code executed, showing the keys from every message sent. The code from the producers is set to send messages for 20 seconds, but could be set to another value to see more or less messages.
 
 <p align="center">
-<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/Cons.png" width="750" height="870" title="Consumer">
+<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/Cons.png" width="550" height="640" title="Consumer">
 </p>
 
 You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Producer_B.py) and [Consumer.py](src/Consumer.py) files located in the [src](src/) folder.
