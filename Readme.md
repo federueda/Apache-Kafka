@@ -8,6 +8,18 @@
 
 Note: In practice: You start the three Python Scripts independently (First you strt the zookeper and the Kafka server)
 
+I started installing Kafka through Homebrew in Mac.
+
+$ brew cask install java
+$ brew install kafka
+
+The next step is to start Zookeeper Server followed by the Kafka Server.
+
+$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties
+$ kafka-server-start /usr/local/etc/kafka/server.properties
+
+Now, it is possible to start creating Kafka topics, consumers and producers. 
+
 ## 2. Read the entire Documentation of Apache Kafka.
 
 What is new / different about Kafka Streams? Write to paragraphs.
