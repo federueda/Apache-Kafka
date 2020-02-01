@@ -44,7 +44,7 @@ You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Produc
 
 ## 2. Read the entire [Documentation of Apache Kafka.](https://kafka.apache.org/24/documentation/streams/)
 
-What is new / different about Kafka Streams? Write to paragraphs.
+What is new / different about Kafka Streams? Write two paragraphs.
 
 ## 3. Watch the AlphaGo Movie on Netflix
 
