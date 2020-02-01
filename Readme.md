@@ -10,7 +10,7 @@ Note: In practice: You start the three Python Scripts independently (First you s
 
 I started installing Kafka through Homebrew in Mac.
 
-$ brew cask install java
+$ brew cask install java \
 $ brew install kafka
 
 The next step is to start Zookeeper Server followed by the Kafka Server.
