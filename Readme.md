@@ -15,7 +15,7 @@ $ brew install kafka
 
 The next step is to start Zookeeper Server followed by the Kafka Server.
 
-$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties
+$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties \
 $ kafka-server-start /usr/local/etc/kafka/server.properties
 
 Now, it is possible to start creating Kafka topics, consumers and producers. 
