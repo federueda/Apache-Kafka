@@ -46,6 +46,6 @@ You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Produc
 
 What is new / different about Kafka Streams? Write to paragraphs.
 
-## 3. Watch the AlphaGo Movie on NetFlix
+## 3. Watch the AlphaGo Movie on Netflix
 
 Done!
