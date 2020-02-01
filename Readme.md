@@ -46,7 +46,7 @@ You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Produc
 
 What is new / different about Kafka Streams? Write two paragraphs.
 
-It is an API, a system for transforming and enriching the streams of data used in Apache Kafka. It is useful when you are looking for high level of abstraction. This API is part of the open source Apache Kafka project. Several important characteristics that makes Kafka Streams different:
+It is an API for transforming and enriching the streams of data used in Apache Kafka. It is useful when you are looking for high level of abstraction. This API is part of the open source Apache Kafka project. Several important characteristics that makes Kafka Streams different:
 
 - Support one record at a time processing for miliseconds latenncy
 - Support stateless processing, stateful processing and windowing operations
