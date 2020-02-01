@@ -30,6 +30,10 @@ pip install kafka-python
 
 ### Creating a Producer in Kafka-Python
 
+I implemented a very basic code for producers, with a time function that held the execution of sending the messages by 1 and 2 seconds, and sending the value and origin encapsulated in the key. The consumer just read the message.key with the origin and value of the number (odd or even).
+
+The consumer code was executed first, and started listening, and then I executed the Producer_A and Producer_B python codes (see the attached screenshot for results)
+
 You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Producer_B.py) and [Consumer.py](src/Consumer.py) files located in the [src](src/) folder.
 
 ### Screenshots of Producer+Consumer
