@@ -33,6 +33,11 @@ Now, it is possible to start creating Kafka topics, consumers and producers.
 
 $ kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic sample
 
+### Confirm the "sample" topic was created
+
+$ kafka-topics --list --zookeeper localhost:2181
+
+
 ### Install Kafka-Python library
 
 pip install kafka-python
