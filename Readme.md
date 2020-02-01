@@ -35,7 +35,7 @@ You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Produc
 ### Screenshots of Producer+Consumer
 
 <p align="center">
-<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/A3_Kafka.png" width="500" height="400" title="Kafka">
+<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/A3_Kafka.png" width="580" height="500" title="Kafka">
 </p>
 
 ## 2. Read the entire Documentation of Apache Kafka.
