@@ -20,6 +20,18 @@ $ kafka-server-start /usr/local/etc/kafka/server.properties
 
 Now, it is possible to start creating Kafka topics, consumers and producers. 
 
+### Creating a Kafka Topic with the name "sample"
+
+$ kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic sample
+
+### Install Kafka-Python library
+
+pip install kafka-python
+
+### Creating a Producer in Kafka-Python
+
+
+
 ## 2. Read the entire Documentation of Apache Kafka.
 
 What is new / different about Kafka Streams? Write to paragraphs.
