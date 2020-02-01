@@ -42,7 +42,7 @@ You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Produc
 <img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/A3_Kafka.png" width="580" height="500" title="Kafka">
 </p>
 
-## 2. Read the entire Documentation of Apache Kafka.
+## 2. Read the entire [Documentation](https://kafka.apache.org/24/documentation/streams/) of Apache Kafka.
 
 What is new / different about Kafka Streams? Write to paragraphs.
 
