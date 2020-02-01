@@ -34,7 +34,9 @@ pip install kafka-python
 
 ### Screenshots of Producer+Consumer
 
-
+<p align="center">
+<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/A3_Kafka.png" width="400" height="300" title="Kafka">
+</p>
 
 ## 2. Read the entire Documentation of Apache Kafka.
 
