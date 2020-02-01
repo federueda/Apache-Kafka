@@ -30,7 +30,7 @@ pip install kafka-python
 
 ### Creating a Producer in Kafka-Python
 
-
+You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Producer_B.py) and [Consumer.py](src/Consumer.py) files located in the [src](src/) folder.
 
 ### Screenshots of Producer+Consumer
 
