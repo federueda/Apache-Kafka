@@ -16,7 +16,16 @@ $ brew install kafka
 The next step is to start Zookeeper Server followed by the Kafka Server.
 
 $ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties \
+
+<p align="center">
+<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/Zookeeper.png" width="600" height="100" title="Zoo">
+</p>
+
 $ kafka-server-start /usr/local/etc/kafka/server.properties
+
+<p align="center">
+<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/Kafka_Server.png" width="600" height="100" title="Ka">
+</p>
 
 Now, it is possible to start creating Kafka topics, consumers and producers. 
 
@@ -28,19 +37,17 @@ $ kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --part
 
 pip install kafka-python
 
-### Creating a Producer in Kafka-Python
+### Creating a Producer with Kafka-Python
 
-I implemented a very basic code for producers, with a time function that held the execution of sending the messages by 1 and 2 seconds, and sending the value and origin encapsulated in the key. The consumer just read the message.key with the origin and value of the number (odd or even).
+I implemented a very basic code for producers, with a time function that held the execution of sending the messages by 1 and 2 seconds, and encapsulating the information needed to print only in the key. The consumer just read the message.key with the origin and value of the number (odd or even).
 
-The consumer code was executed and started listening, then was executed the Producer_A and Producer_B python codes (see the attached screenshot for results).
-
-You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Producer_B.py) and [Consumer.py](src/Consumer.py) files located in the [src](src/) folder.
-
-### Screenshots of Producer+Consumer
+First, the consumer code is executed and it starts to listen, then is executed the Producer_A and Producer_B python codes. In the following screenshot you can see the consumer code executed, showing the keys from every message sent.
 
 <p align="center">
-<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/A3_Kafka.png" width="580" height="440" title="Kafka">
+<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/Consumer.png" width="580" height="440" title="Consumer">
 </p>
+
+You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Producer_B.py) and [Consumer.py](src/Consumer.py) files located in the [src](src/) folder.
 
 ## 2. Read the entire [Documentation of Apache Kafka.](https://kafka.apache.org/24/documentation/streams/)
 
