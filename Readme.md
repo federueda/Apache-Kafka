@@ -44,7 +44,7 @@ I implemented a very basic code for producers, with a time function that held th
 First, the consumer code is executed and it starts to listen, then is executed the Producer_A and Producer_B python codes. In the following screenshot you can see the consumer code executed, showing the keys from every message sent.
 
 <p align="center">
-<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/Consumer.png" width="580" height="400" title="Consumer">
+<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/Cons.png" width="950" height="1100" title="Consumer">
 </p>
 
 You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Producer_B.py) and [Consumer.py](src/Consumer.py) files located in the [src](src/) folder.
