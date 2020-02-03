@@ -8,14 +8,14 @@
 
 Note: In practice: You start the three Python Scripts independently (First you strt the zookeper and the Kafka server)
 
-I started installing Kafka through Homebrew in Mac.
+### Step 1: installing Kafka through Homebrew in Mac.
 
 $ brew cask install java \
 $ brew install kafka
 
-The next step is to start Zookeeper Server followed by the Kafka Server.
+### Step 2: Start Zookeeper Server followed by the Kafka Server.
 
-$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties \
+$ zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties 
 
 <p align="center">
 <img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/Zookeeper.png" width="600" height="100" title="Zoo">
@@ -29,20 +29,20 @@ $ kafka-server-start /usr/local/etc/kafka/server.properties
 
 Now, it is possible to start creating Kafka topics, consumers and producers. 
 
-### Creating a Kafka Topic with the name "sample"
+### Step 3: Creating a Kafka Topic with the name "sample"
 
 $ kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic sample
 
-### Confirm the "sample" topic was created
+Confirm the "sample" topic was created
 
 $ kafka-topics --list --zookeeper localhost:2181
 
 
-### Install Kafka-Python library
+### Step 4: Install Kafka-Python library
 
 pip install kafka-python
 
-### Creating a Producer with Kafka-Python
+### Step 5: Creating a Producer/Consumer with Kafka-Python
 
 I implemented a very basic code for producers, with a time function that held the execution of sending the messages by 1 and 2 seconds, and encapsulating the information needed to print only in the key. The consumer just read the message.key with the origin and value of the number (odd or even).
 
