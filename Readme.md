@@ -6,7 +6,7 @@
 - Producer A writes even numbers every second, the other Producer B writes odd numbers every two seconds to the topic.
 - Consumer C reads the numbers and prints them with the origin A or B.
 
-Note: In practice: You start the three Python Scripts independently (First you strt the zookeper and the Kafka server)
+Note: In practice: You start the three Python Scripts independently (First you start the zookeeper and the Kafka server)
 
 ### Step 1: Installing Kafka through Homebrew
 
@@ -46,7 +46,7 @@ pip install kafka-python
 
 I implemented a basic code for producers, with a time function that held the execution of sending the messages by 1 (Producer A - even numbers) and 2 seconds (Producer B, odd numbers) The consumer reads the message and shows the message value that has the origin (Producer A or B) and the number (odd or even).
 
-First, the consumer code is executed and it starts to listen for messages, then is executed the Producer_A and Producer_B python codes at almost the same time. In the following screenshot you can see the consumer code executed, showing the messages values sent by the producers. For the simplicity of the code, the producers are set to generate messages for less than a minute.
+First, the consumer code is executed, and it starts to listen for messages, then is executed the Producer_A and Producer_B python codes at almost the same time. In the following screenshot you can see the consumer code executed, showing the messages values sent by the producers. For the simplicity of the code, the producers are set to generate messages for less than a minute.
 
 <p align="center">
 <img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/cons.png" width="300" height="380" title="Consumer">
@@ -60,14 +60,14 @@ What is new / different about Kafka Streams? Write two paragraphs.
 
 It is an API for transforming and enriching the streams of data used in Apache Kafka. It is useful when you are looking for high level of abstraction. This API is part of the open source Apache Kafka project. Several important characteristics that makes Kafka Streams different:
 
-- Support one record at a time processing for miliseconds latenncy
+- Support one record at a time processing for milliseconds latency
 - Support stateless processing, stateful processing and windowing operations
 - Elastically scalable and Fault Tolerant
 - Deployment agnostic (on-premise, cloud, containers, virtual machines, etc.)
-- No matter if it is a small, medium or large scale use case
+- No matter if it is a small, medium or large-scale use case
 - Develop on Linux, Windows, Mac
 
-From the architecture point of view, Kafka Streams code will run into your application without a separate processing cluster (seen i.e. as a Java dependency), making the deplyment much easier. Also, all the communication between Kakfa Streams and other applications are performed by Kafka, so you still have all the advatages of this tool, i.e. security features. 
+From the architecture point of view, Kafka Streams code will run into your application without a separate processing cluster (seen i.e. as a Java dependency), making the deployment much easier. Also, all the communication between Kakfa Streams and other applications are performed by Kafka, so you still have all the advantages of this tool, i.e. security features. 
 
 Now in applications of streaming data processing Kafka Streams guarantees that for any record read from the source Kafka topics, its processing results will be reflected exactly once in the output Kafka topic as well as in the state stores for stateful operations, and this is achieved because the integration between Kafka Streams and Kafka storage system.
 
