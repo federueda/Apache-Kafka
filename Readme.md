@@ -8,7 +8,7 @@
 
 Note: In practice: You start the three Python Scripts independently (First you strt the zookeper and the Kafka server)
 
-### Step 1: installing Kafka through Homebrew in Mac.
+### Step 1: Installing Kafka through Homebrew
 
 $ brew cask install java \
 $ brew install kafka
@@ -44,12 +44,12 @@ pip install kafka-python
 
 ### Step 5: Creating a Producer/Consumer with Kafka-Python
 
-I implemented a very basic code for producers, with a time function that held the execution of sending the messages by 1 and 2 seconds, and encapsulating the information needed to print only in the key. The consumer just read the message.key with the origin and value of the number (odd or even).
+I implemented a basic code for producers, with a time function that held the execution of sending the messages by 1 (Producer A - even numbers) and 2 seconds (Producer B, odd numbers) The consumer reads the message and shows the message value that has the origin (Producer A or B) and the number (odd or even).
 
-First, the consumer code is executed and it starts to listen, then is executed the Producer_A and Producer_B python codes. In the following screenshot you can see the consumer code executed, showing the keys from every message sent. The code from the producers is set to send messages for 20 seconds, but could be set to another value to see more or less messages.
+First, the consumer code is executed and it starts to listen for messages, then is executed the Producer_A and Producer_B python codes at almost the same time. In the following screenshot you can see the consumer code executed, showing the messages values sent by the producers. For the simplicity of the code, the producers are set to generate messages for less than a minute.
 
 <p align="center">
-<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/cons.png" width="490" height="500" title="Consumer">
+<img src="https://github.com/federueda/Apache_Kafka/blob/master/docs/cons.png" width="300" height="380" title="Consumer">
 </p>
 
 You can check the [Producer_A.py](src/Producer_A.py), [Producer_B.py](src/Producer_B.py) and [Consumer.py](src/Consumer.py) files located in the [src](src/) folder.
