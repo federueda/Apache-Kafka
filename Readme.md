@@ -44,7 +44,7 @@ pip install kafka-python
 
 ### Step 5: Creating a Producer/Consumer with Kafka-Python
 
-I implemented a basic code for producers, with a time function that held the execution of sending the messages by 1 (Producer A - even numbers) and 2 seconds (Producer B, odd numbers) The consumer reads the message and shows the message value that has the origin (Producer A or B) and the number (odd or even).
+I implemented a basic code for producers, with a time function that held the execution of sending the messages by 1 (Producer A, even numbers) and 2 seconds (Producer B, odd numbers) The consumer reads the message and shows the message value that has the origin (Producer A or B) and the number (odd or even).
 
 First, the consumer code is executed, and it starts to listen for messages, then is executed the Producer_A and Producer_B python codes at almost the same time. In the following screenshot you can see the consumer code executed, showing the messages values sent by the producers. For the simplicity of the code, the producers are set to generate messages for less than a minute.
 
